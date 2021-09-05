@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.rating"
+    >
+
+    <Button
+        android:id="@+id/rateBtn"
+        android:layout_width="242dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:onClick="rateFn"
+        android:text="@string/rateUs"
+        android:textColorHighlight="#00BCD4"
+        android:textColorHint="#673AB7"
+        android:textColorLink="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="240dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.347">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="handleRate1" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="handleRate2" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:onClick="handleRate3" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:onClick="handleRate4" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:onClick="handleRate5" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="319dp"
+        android:layout_height="54dp"
+        android:fontFamily="serif"
+        android:text="@string/rateText"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="420dp"
+        android:layout_height="334dp"
+        android:src="@drawable/ratepic"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:onClick="mail"
+        android:src="@drawable/email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateBtn"
+        app:layout_constraintVertical_bias="0.816" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

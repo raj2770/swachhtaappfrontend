@@ -10,11 +10,25 @@
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_loginpage"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/login_logo"
             android:title="@string/login" />
         <item
             android:id="@+id/nav_signuppage"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/signup_logo"
             android:title="@string/signup" />
+
+        <item android:title ="communicate" >
+            <menu>
+                <item
+                    android:id="@+id/rateUs"
+                    android:icon="@drawable/ic_baseline_rate_review_24"
+                    android:title="@string/rateUs" />
+
+                <item
+                    android:id="@+id/about"
+                    android:icon="@drawable/ic_baseline_people_alt_24"
+                    android:title="@string/about" />
+            </menu>
+        </item>
     </group>
 </menu>

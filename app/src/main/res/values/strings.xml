@@ -31,4 +31,10 @@
     <string name="signup_button">SignUp</string>
     <string name="signup_name">Name</string>
     <string name="login_email_id">Email ID</string>
+    <string name="rateUs">Rate</string>
+    <string name="about">About</string>
+    <string name="aboutUs">This is one click solution ( Swachhta app)
+        where you can just click a picture of a garbage dump and click on send button which will be processed and send to the local nearest municipal corporation with a mail.</string>
+    <string name="User">User</string>
+    <string name="rateText">Please rate us to and help us and provide your valuable feedback to improve 😊</string>
 </resources>
