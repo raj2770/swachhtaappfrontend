@@ -122,12 +122,12 @@ public class LoginPageFragment extends Fragment {
                 return headers;
             }
         };
-
-        int socketTime = 3000;
-        RetryPolicy policy = new DefaultRetryPolicy(socketTime,DefaultRetryPolicy.DEFAULT_MAX_RETRIES,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
-        jsonObjectRequest.setRetryPolicy(policy);
-        RequestQueue requestQueue = Volley.newRequestQueue(getContext());
-        requestQueue.add(jsonObjectRequest);
+        Volley.newRequestQueue(getContext()).add(jsonObjectRequest);
+//        int socketTime = 3000;
+//        RetryPolicy policy = new DefaultRetryPolicy(socketTime,DefaultRetryPolicy.DEFAULT_MAX_RETRIES,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
+//        jsonObjectRequest.setRetryPolicy(policy);
+//        RequestQueue requestQueue = Volley.newRequestQueue(getContext());
+//        requestQueue.add(jsonObjectRequest);
 
     }
 

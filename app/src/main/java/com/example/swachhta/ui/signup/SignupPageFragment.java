@@ -17,6 +17,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.FileProvider;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -32,8 +33,10 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.swachhta.R;
 import com.example.swachhta.databinding.FragmentLoginpageBinding;
 import com.example.swachhta.databinding.FragmentSignuppageBinding;
+import com.example.swachhta.ui.mainpage.MainPageFragment;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -68,6 +71,15 @@ public class SignupPageFragment extends Fragment {
                 String userPassword=password.getText().toString();
                 String userName=name.getText().toString();
                 signUpServer(userId,userPassword,userName);
+                emailid.setText("");
+                password.setText("");
+                name.setText("");
+
+                MainPageFragment newmainpagefragment = new MainPageFragment();
+                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.nav_mainpage, newmainpagefragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
 
             }
         });
@@ -76,7 +88,7 @@ public class SignupPageFragment extends Fragment {
     public void signUpServer(String userId,String password,String userName)
     {
         // rating server talk
-        String apikey = "https://rating001.herokuapp.com/api/swachhta//signup";
+        String apikey = "https://rating001.herokuapp.com/api/swachhta/signup";
         HashMap<String,String> params = new HashMap<>();
         params.put("email",userId);
         params.put("password",password);
@@ -92,6 +104,7 @@ public class SignupPageFragment extends Fragment {
                         try{
                             if(response.getBoolean("success")){
                                 Toast.makeText(getContext(),"SignUp successfully",Toast.LENGTH_SHORT).show();
+
                             }
                         }
                         catch(JSONException e){

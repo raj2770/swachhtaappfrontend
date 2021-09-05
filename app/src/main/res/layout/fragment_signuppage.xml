@@ -23,7 +23,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="24dp"
             android:paddingLeft="34dp"
@@ -36,35 +36,37 @@
                 android:paddingBottom="20dp"
                 android:text="@string/signup_page_title"
                 android:textAlignment="center"
-                android:textSize="36sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/signup_email_id"
-                android:textSize="22sp" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/signup_emaiid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/signup_name"
-                android:textSize="22sp" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/signup_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/signup_password"
-                android:textSize="22sp" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/signup_password"
@@ -78,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#0FA7E9"
                 android:text="@string/signup_button"
-                android:textSize="22sp" />
+                android:textSize="18sp" />
 
 
         </LinearLayout>
