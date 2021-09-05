@@ -5,7 +5,7 @@ backend --> https://github.com/Talha-shamim/swachhta
 video ---> https://drive.google.com/file/d/1EO0WRqZ7dXCq5bZvHofASKBB2A24f_AH/view?usp=sharing
 
 
-What is the computation problem from SDG goals?
+**What is the computation problem from SDG goals?**
 
 Goal 13 - Climate Action
 
@@ -16,7 +16,7 @@ Goal 15 - Life on Land
 
 ==============================================================================
 
-What are the existing solutions and why they don’t work?
+**What are the existing solutions and why they don’t work?**
 
 Irregularities in the garbage dump collection don’t set on the same page with the already set schedule and behavioural aspect of the people.
 
@@ -27,7 +27,7 @@ Lengthy/Complex process
 
 
 ==============================================================================
-What is your proposed solution?
+**What is your proposed solution?**
 
 One - click solution
 
@@ -43,7 +43,7 @@ Features such as rating,review,priority to mc  etc
 ==============================================================================
 
 
-What technologies will you use to implement the solution?
+**What technologies will you use to implement the solution?**
 
 Android Studio
 Web scraping
@@ -53,7 +53,7 @@ Rest API
 
 ==============================================================================
 
-How will you evaluate your Solution?
+**How will you evaluate your Solution?**
 
 This will be a people participative solution as that’s what the goal is all about, only from the govt side this won’t work. So we need an easy solution else people won’t come forward.
 We can then take the feedback from our users.
