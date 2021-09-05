@@ -21,4 +21,17 @@
         android:name="com.example.swachhta.ui.signup.SignupPageFragment"
         android:label="@string/login"
         tools:layout="@layout/fragment_signuppage"/>
+
+    <fragment
+        android:id="@+id/rateUs"
+        android:name="com.example.swachhta.ui.rating"
+        android:label="@string/rateUs"
+        tools:layout="@layout/fragment_rating" />
+
+    <fragment
+        android:id="@+id/about"
+        android:name="com.example.swachhta.ui.about"
+        android:label="@string/User"
+        tools:layout="@layout/fragment_about" />
+
 </navigation>
