@@ -4,6 +4,8 @@ backend --> https://github.com/Talha-shamim/swachhta
 
 video ---> https://drive.google.com/file/d/1EO0WRqZ7dXCq5bZvHofASKBB2A24f_AH/view?usp=sharing
 
+apk ---> https://drive.google.com/file/d/1YV8UPJIKRNt-qb0Lf_2uApD2ON2PSoM_/view?usp=sharing
+
 
 **What is the computation problem from SDG goals?**
 
